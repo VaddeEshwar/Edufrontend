@@ -122,7 +122,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                 <ul class="navbar-nav">
+            <ul class="navbar-nav" *ngIf="!isAdmin">
                     <li class="nav-item dropdown"><a class="nav-link  text-dark dropdown-toggle">Home</a>
                         <ul class="dropdown-menu">
                             <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/aboutus']">About
@@ -226,9 +226,10 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/contactus']">Contact Us</a></li>
-                </ul>
+         
+                </ul> 
 
-                <!-- <ul class="navbar-nav">
+               <ul class="navbar-nav" *ngIf="isAdmin">
                     <ng-container *ngFor="let menuItem of menuItem">
                       <li class="nav-item dropdown" *ngIf="menuItem.subMenu && menuItem.subMenu.length > 0">
                         <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -276,11 +277,7 @@
                         <a class="nav-link text-dark" [routerLink]="menuItem.menuUrl">{{ menuItem.menu }}</a>
                       </li>
                     </ng-container>
-                  </ul> -->
-
-
-
-
+                  </ul> 
 
 
             </div>

@@ -27,6 +27,7 @@ visible:boolean=true;
 loginForm!: FormGroup;
 submitted:boolean = false;
 validUser:boolean = false;
+isAdmin: boolean = false;
 constructor(private httpClient: HttpClient,
   private apiService: ApiService,
   private router: Router,
@@ -59,9 +60,11 @@ customOptions: OwlOptions = {
 }
 ngOnInit(){
    //this.httpClient.get<any>("assets/data.json").subscribe((data)=>{
+    this.isAdmin = this.apiService.isUserAdmin()
     this.loginForm = new FormGroup({
       username: new FormControl(null, [Validators.required]),
       password: new FormControl(null,  [Validators.required]),
+      
   });
 
    if(localStorage.getItem("loggedUserId")){
@@ -114,6 +117,7 @@ getMenu(){
         });
        this.menuItem.push({menu:element.menu, menuUrl:element.menuUrl, subMenu:this.subMenuList});
       }
+      console.log(this.menuItem)
     });
   });
 }

@@ -79,23 +79,7 @@
                         </ng-template>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 pt-5">
-                        <div class="features-image-2 pt-4" *ngIf="imageData.length > 1; else noData">
-                            <img [src]="imageData[4].imageUrl" alt="patshala" class="mb-3 img-data">
-                        </div>
-                        <ng-template #noData>
-                            <p>No images available.</p>
-                        </ng-template>
-                    </div>
-                    <div class="col-md-8 pt-5">
-                        <h2 class="page-sub-title">CMO (Chief Marketing Officer)</h2>
-                        <p style="text-align: justify">Rajesh Seesa is our CMO, entrusted with shaping our brand
-                            identity and driving marketing strategies that resonate with our target audience. With a
-                            focus on customer engagement and market growth, he ensures our organization remains
-                            competitive and relevant.</p>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-md-8 pt-5 text-center">
                         <h2 class="page-sub-title">CAO (Chief Academic Officer)</h2>
@@ -128,6 +112,23 @@
                         <p style="text-align: justify">Overseeing day-to-day operations is Babitha Rani, our COO. She
                             optimizes internal processes, enhances efficiency, and fosters a culture of collaboration
                             and excellence across departments to deliver exceptional results.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pt-5">
+                        <div class="features-image-2 pt-4" *ngIf="imageData.length > 1; else noData">
+                            <img [src]="imageData[4].imageUrl" alt="patshala" class="mb-3 img-data">
+                        </div>
+                        <ng-template #noData>
+                            <p>No images available.</p>
+                        </ng-template>
+                    </div>
+                    <div class="col-md-8 pt-5">
+                        <h2 class="page-sub-title">CMO (Chief Marketing Officer)</h2>
+                        <p style="text-align: justify">Rajesh Seesa is our CMO, entrusted with shaping our brand
+                            identity and driving marketing strategies that resonate with our target audience. With a
+                            focus on customer engagement and market growth, he ensures our organization remains
+                            competitive and relevant.</p>
                     </div>
                 </div>
             </div>

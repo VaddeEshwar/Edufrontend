@@ -149,7 +149,7 @@ font-weight: 200;
 }
 .mainNav .navbar-nav li.nav-item a {
   /* font-size: 1rem; */
-  padding-right: 28px;
+  padding-right: 26px;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }

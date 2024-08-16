@@ -12,7 +12,10 @@ export class ApiService {
   testprodbaseurl= 'https://localhost:44388/api/';// 
   apiUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages';
  
-
+  isUserAdmin(): boolean {
+    const isAdmin = localStorage.getItem("isadmin");
+    return isAdmin === 'true'; // Adjust based on your logic
+  }
 
  constructor(private httpClient: HttpClient) {}
  // Http Headers
@@ -86,6 +89,7 @@ export class ApiService {
     const headers= new HttpHeaders().set('content-type', 'application/json')
     return this.httpClient.post<any>(`${this.prodbaseurl}GetResponseData`, requestBody, this.httpOptions);
   }
+  
   getFacultyImages(pageNumber: number, eventType: string): Observable<any> {
     const url = `${this.apiUrl}?pagenumber=${pageNumber}&eventType=${eventType}`;
     return this.httpClient.get<any>(url);
