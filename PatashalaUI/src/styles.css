@@ -924,3 +924,8 @@ footer.footerBg {
   aspect-ratio: 3 / 3;
   width: 100%;
 }
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1220px !important;
+  }
+}

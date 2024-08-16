@@ -81,14 +81,6 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-md-8 pt-5 text-center">
-                        <h2 class="page-sub-title">CAO (Chief Academic Officer)</h2>
-                        <p style="text-align: justify">
-                            Our Chief Academic Officer (CAO) is the cornerstone of our educational institution's
-                            commitment to excellence in teaching, learning, and scholarship. With a wealth of experience
-                            in academia and a passion for educational innovation, our CAO leads the charge in shaping
-                            the academic vision and strategy of our institution.</p>
-                    </div>
                     <div class="col-md-4 pt-5">
                         <div class="features-image-2 pt-4" *ngIf="imageData.length > 1; else noData">
                             <img [src]="imageData[2].imageUrl" alt="patshala" class="mb-3 img-data">
@@ -97,8 +89,23 @@
                             <p>No images available.</p>
                         </ng-template>
                     </div>
+                    <div class="col-md-8 pt-5 text-center">
+                        <h2 class="page-sub-title">CAO (Chief Academic Officer)</h2>
+                        <p style="text-align: justify">
+                            Our Chief Academic Officer (CAO) is the cornerstone of our educational institution's
+                            commitment to excellence in teaching, learning, and scholarship. With a wealth of experience
+                            in academia and a passion for educational innovation, our CAO leads the charge in shaping
+                            the academic vision and strategy of our institution.</p>
+                    </div>
                 </div>
                 <div class="row">
+                   
+                    <div class="col-md-8 pt-5">
+                        <h2 class="page-sub-title">COO (Chief Operations Officer)</h2>
+                        <p style="text-align: justify">Overseeing day-to-day operations is Babitha Rani, our COO. She
+                            optimizes internal processes, enhances efficiency, and fosters a culture of collaboration
+                            and excellence across departments to deliver exceptional results.</p>
+                    </div>
                     <div class="col-md-4 pt-5">
                         <div class="features-image-2 pt-4" *ngIf="imageData.length > 1; else noData">
                             <img [src]="imageData[3].imageUrl" alt="patshala" class="mb-3 img-data">
@@ -106,12 +113,6 @@
                         <ng-template #noData>
                             <p>No images available.</p>
                         </ng-template>
-                    </div>
-                    <div class="col-md-8 pt-5">
-                        <h2 class="page-sub-title">COO (Chief Operations Officer)</h2>
-                        <p style="text-align: justify">Overseeing day-to-day operations is Babitha Rani, our COO. She
-                            optimizes internal processes, enhances efficiency, and fosters a culture of collaboration
-                            and excellence across departments to deliver exceptional results.</p>
                     </div>
                 </div>
                 <div class="row">
