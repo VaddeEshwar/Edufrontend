@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit {
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
+    lazyLoad:true,
     items: 4,  // Display 4 items at a time
     dots: false,
     navSpeed: 700,
@@ -317,14 +318,14 @@ export class HomeComponent implements OnInit {
   //   }
   // }
 
-  // setupAutoScroll(): void {
-  //   this.autoScrollInterval = setInterval(() => {
-  //     if (this.currentPage * this.pageSize >= this.images.length) {
-  //       this.currentPage = 0;  // Optionally reset to start or handle as needed
-  //     }
-  //     this.loadMoreImages();
-  //   }, 3000); // Change the interval as needed
-  // }
+  setupAutoScroll(): void {
+    this.autoScrollInterval = setInterval(() => {
+      if (this.currentPage * this.pageSize >= this.images.length) {
+        this.currentPage = 0;  // Optionally reset to start or handle as needed
+      }
+      this.loadMoreImages();
+    }, 300); // Change the interval as needed
+  }
   loadImages(): void {
     this.apiService.GetImages().subscribe({
       next: (data: any) => {
@@ -345,15 +346,15 @@ export class HomeComponent implements OnInit {
   }
 
 
-  // loadMoreImages(): void {
-  //   if (this.currentPage * this.pageSize < this.images.length) {
-  //     this.loadImages();
-  //   } else {
-  //     // Reset or handle end of images list
-  //     this.currentPage = 0;
-  //     this.images = [];
-  //     this.loadImages();
-  //   }
-  // }
+  loadMoreImages(): void {
+    if (this.currentPage * this.pageSize < this.images.length) {
+      this.loadImages();
+    } else {
+      // Reset or handle end of images list
+      this.currentPage = 0;
+      this.images = [];
+      this.loadImages();
+    }
+  }
 }
 

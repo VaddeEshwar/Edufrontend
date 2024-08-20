@@ -749,16 +749,16 @@ footer.footerBg {
   padding: 10px;
 }
 .owl-theme .owl-nav .owl-prev {
-  width: 70px;
-    height: 70px;
+  width: 45px;
+    height: 45px;
     background: #fff;
     border-radius: 0;
     color: #141010;
     position: relative;
 }
 .owl-theme .owl-nav .owl-next {
-  width: 70px;
-    height: 70px;
+  width: 45px;
+  height: 45px;
     background: #fff;
     border-radius: 0;
     color: #141010;

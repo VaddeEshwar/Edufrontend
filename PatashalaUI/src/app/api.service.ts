@@ -14,7 +14,7 @@ export class ApiService {
  
   isUserAdmin(): boolean {
     const isAdmin = localStorage.getItem("isadmin");
-    return isAdmin === 'true'; // Adjust based on your logic
+    return isAdmin === 'true';
   }
 
  constructor(private httpClient: HttpClient) {}
@@ -111,4 +111,5 @@ export class ApiService {
   public GetImages(){
     return this.httpClient.get<any>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
   }
+  
 }
