@@ -10,9 +10,16 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.p-4 {
+  padding: 4.5rem !important;
+}
 a {
   color: rgb(251 251 251);
   text-decoration: underline;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
 }
 img {
   -ms-interpolation-mode: bicubic;
@@ -135,7 +142,7 @@ font-weight: 200;
 .topnavbg{
   position: relative;
   /* background: url("assets/img/topnavbg.png") no-repeat center center; */
-  background:linear-gradient(-180deg, #853a66 0%, #cf1f60 100%);
+  background:linear-gradient(310deg, #b82883 0%, #d01d5e 100%);
   background-size: cover;
 
 }
@@ -315,6 +322,13 @@ display: block;
   border-radius: 100%;
   width: 260px;
   height: 260px;
+  padding: 40px 20px;
+}
+.circle_body1{
+  margin: 15px;
+  border-radius: 100%;
+  width: 330px;
+  height: 360px;
   padding: 40px 20px;
 }
 .circle_body a {
@@ -915,8 +929,9 @@ footer.footerBg {
   border: 1px solid #e5e7eb !important;
 }
 .top120{
-  top: 100px;
+  top: 120px;
   z-index: 1019;
+  padding: 20px auto;
 }
 
 .owl-carousel .owl-item img{

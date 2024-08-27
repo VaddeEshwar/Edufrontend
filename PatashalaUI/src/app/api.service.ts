@@ -108,8 +108,8 @@ export class ApiService {
   public Login(input:any){
     return this.httpClient.post<any>(`${this.prodbaseurl}GetLoggedInUser`, input, this.httpOptions);
   }
-  public GetImages(){
+ public GetImages(){
     return this.httpClient.get<any>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
-  }
+  } 
   
 }
