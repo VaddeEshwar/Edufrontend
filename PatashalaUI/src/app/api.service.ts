@@ -111,5 +111,7 @@ export class ApiService {
  public GetImages(){
     return this.httpClient.get<any>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
   } 
-  
+  public NewGetImages(){
+    return this.httpClient.get<any>(`${this.apiUrl}NewGettheImagesData`,  this.httpOptions);
+  } 
 }

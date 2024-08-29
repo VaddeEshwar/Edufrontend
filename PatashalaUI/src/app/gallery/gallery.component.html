@@ -34,7 +34,7 @@
                         <a class="nav-link" data-bs-toggle="tab" href="#tab6">Mother's Day</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab7">LB Nagar Branche Opening</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab7">Himayathnagar Branch Opening</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tab" href="#tab2">Bhavans Event</a>
@@ -57,7 +57,7 @@
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/1.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/1.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
@@ -65,21 +65,21 @@
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/2.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/2.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/3.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/3.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/4.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/4.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/1.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/1.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                             <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
-                                        src="assets/img/Gallery/sports/2.jpeg"
+                                        src="assets/img/Gallery/Team-Spirit/2.jpeg"
                                         alt="Patshala Academy">
                                 </div>
                             </div>
@@ -174,15 +174,14 @@
                     <!-------->
                     <div class="tab-pane fade" id="tab8">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/Courtesy_visit_to_meet/5.jpeg"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/Courtesy_visit_to_meet/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
+                              
                           
-                            <div class="col-lg-4">
+                            <!-- <div class="col-lg-4">
                                 <div class="card  pt-4">
                                     <img class="card-img-top"
                                         src="assets/img/Gallery/Courtesy_visit_to_meet/2.jpeg"
@@ -202,47 +201,17 @@
                                         src="assets/img/Gallery/Courtesy_visit_to_meet/4.jpeg"
                                         alt="Patshala Academy">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab7">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/LBnagar/10.jpeg"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/HimayathnagarBranchLaunch/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/LBnagar/3.jpeg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/LBnagar/4.jpeg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/LBnagar/5.jpeg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/LBnagar/7.jpeg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                     </div>
                     <div class="tab-pane fade" id="tab6">
                         <div class="row">
@@ -320,120 +289,36 @@
                     </div>
                     <div class="tab-pane fade" id="tab2">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/BhavansEvent/BhavansEvent_1.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top"
-                                        src="assets/img/Gallery/BhavansEvent/BhavansEvent_2.jpg"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/BhavansEvent/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Bridgemeet/BM16.JPG"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Bridgemeet/BM14.JPG"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Bridgemeet/BM23.JPG"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Bridgemeet/BM22.JPG"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Bridgemeet/BM21.JPG"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/Bridgemeet/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tab4">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar1.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar19.jpg "
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar20.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar22.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar23.jpg"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/Seminar/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab5">
+                    <div class="tab-pane fade" id="tab5"><!----/Gallery/TeamPics/-->
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar38.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar29.jpg "
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar40.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar22.jpg"
-                                        alt="Patshala Academy">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mt-4">
-                                <div class="card  pt-4">
-                                    <img class="card-img-top" src="assets/img/Gallery/Seminar/Seminar11.jpg"
-                                        alt="Patshala Academy">
+                            <div class="col-lg-4" *ngFor="let img of Imgslst">
+                                <div *ngIf="img.Image.includes('/Gallery/TeamPics/')" class="card pt-4">
+                                    <img [src]="img.Image" alt="{{ img.ImageDescription }}">
                                 </div>
                             </div>
                         </div>
