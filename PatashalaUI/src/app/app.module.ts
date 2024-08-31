@@ -40,6 +40,7 @@ import { VisionMissionComponent } from './vision-mission/vision-mission.componen
 import { CreatemenuComponent } from './createmenu/createmenu.component';
 import { ViewEnquiriesComponent } from './view-enquiries/view-enquiries.component';
 import { DowloadFileService } from './dowload-file.service'
+
 @NgModule({
   declarations: [
     AppComponent,

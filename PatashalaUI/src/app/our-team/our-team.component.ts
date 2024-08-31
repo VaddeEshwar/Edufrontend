@@ -16,6 +16,7 @@ export class OurTeamComponent {
   listMenuResponse:any = [];
   subheading:any;
   menuId:any;
+  
   constructor(private httpClient: HttpClient,
     private route: ActivatedRoute,
     private apiService: ApiService,
@@ -39,8 +40,7 @@ export class OurTeamComponent {
       },
       (error: any) => {
         console.error('Error fetching images:', error);
-      }
-    );
+      });
     // this.httpClient.get<any>("assets/data.json").subscribe((data)=>{
       this.apiService.getData().subscribe((data:any)=>{
       this.listMenuResponse = data.listMenuSubMenu;
