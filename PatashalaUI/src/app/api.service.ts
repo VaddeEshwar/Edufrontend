@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, count } from 'rxjs';
-
+import { ImageData} from '../image-data.model'
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+  GettheImagesData(arg0: number, folder: string) {
+    throw new Error('Method not implemented.');
+  }
  // Base url
  //prodbaseurl = 'https://localhost:44388/api/';
   prodbaseurl ='https://patashalapi.azurewebsites.net/api/'; 
@@ -108,8 +111,8 @@ export class ApiService {
   public Login(input:any){
     return this.httpClient.post<any>(`${this.prodbaseurl}GetLoggedInUser`, input, this.httpOptions);
   }
- public GetImages(){
-    return this.httpClient.get<any>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
+ public GetImages(): Observable<ImageData[]> {
+    return this.httpClient.get<ImageData[]>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
   } 
   public NewGetImages(){
     return this.httpClient.get<any>(`${this.apiUrl}NewGettheImagesData`,  this.httpOptions);
