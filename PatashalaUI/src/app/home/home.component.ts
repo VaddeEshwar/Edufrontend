@@ -17,6 +17,8 @@ interface dropdownOptions {
 
 
 export class HomeComponent implements OnInit {
+  imageData: any[] = []; 
+ 
   images: any = [];
   imageDescription: any = [];
   Imgslst: any[] = [];
@@ -153,6 +155,20 @@ export class HomeComponent implements OnInit {
       // CreatedOn:  new FormControl(null,),      
       // ReturnMessage: new FormControl(null,)
     });
+    this.apiService.NewGetbannerImages().subscribe(
+      (data: any) => {
+        this.imageData = data.map((item: any) => {
+          return {
+            imageUrl: item.imagesUrl,
+            imageDescription: item.imageDescription
+          };
+        });
+        console.log(this.imageData)
+      },
+      (error: any) => {
+        console.error('Error fetching images:', error);
+      }
+    );
 
     this.states = [
       { label: 'Andhra Pradesh', value: 'Amaravati' },
@@ -199,6 +215,25 @@ export class HomeComponent implements OnInit {
       { label: 'SAT' ,value:'SAT'}
     ]
   }
+ 
+    // getBannerImages(folder: string) {
+    //   this.apiService.getFacultyImages(1, folder).subscribe(
+    //     (data: any) => {
+    //       this.imagesByFolder = data.map((item: any) => ({
+    //         imageId: item.imageId,
+    //         imageUrl: item.imagesUrl,
+    //         imageDescription: item.imageDescription
+    //       }));
+    //       console.log(`Images from ${folder}:`, this.imagesByFolder);
+    //     },
+    //     (error: any) => {
+    //       console.error(`Error fetching images from ${folder}:`, error);
+    //     }
+    //   );
+    // }
+
+
+
   get fullName() {
     return this.quickContactForm.get('fullName');
   }
