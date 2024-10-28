@@ -208,11 +208,11 @@
             <div class="col-lg-12">
                 <h1 class="stroke">Latest Gallery</h1>
                 <owl-carousel-o [options]="customOptions">
-                    <ng-template *ngFor="let image of Imgslst" carouselSlide>
+                    <ng-template *ngFor="let img of Imgslst" carouselSlide>
                         <div class="card rounded-0">
                             <div class="card-body">
-                                <h3>{{image.ImageDescription}}</h3>
-                                <img [src]="image.Image"
+                                <h3>{{img.ImageDescription}}</h3>
+                                <img [src]="img.Image"
                                     alt="Patshala is one of the best Commerce and Management institutions in Hyderabad" />
                             </div>
                         </div>

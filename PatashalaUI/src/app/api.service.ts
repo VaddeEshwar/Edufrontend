@@ -9,12 +9,13 @@ export class ApiService {
   GettheImagesData(arg0: number, folder: string) {
     throw new Error('Method not implemented.');
   }
+  
  // Base url
  //prodbaseurl = 'https://localhost:44388/api/';
   prodbaseurl ='https://patashalapi.azurewebsites.net/api/'; 
   testprodbaseurl= 'https://localhost:44388/api/';// 
   apiUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages';
- 
+  bannerUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages?eventType=Banner';
   isUserAdmin(): boolean {
     const isAdmin = localStorage.getItem("isadmin");
     return isAdmin === 'true';
@@ -114,7 +115,8 @@ export class ApiService {
  public GetImages(): Observable<ImageData[]> {
     return this.httpClient.get<ImageData[]>(`${this.prodbaseurl}GettheImagesData`,  this.httpOptions);
   } 
-  public NewGetImages(){
-    return this.httpClient.get<any>(`${this.apiUrl}NewGettheImagesData`,  this.httpOptions);
-  } 
+  public NewGetbannerImages(): Observable<any> {
+    const url = `${this.bannerUrl}`;
+    return this.httpClient.get<any>(url);
+  }
 }
