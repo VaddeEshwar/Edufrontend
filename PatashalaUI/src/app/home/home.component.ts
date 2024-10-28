@@ -364,30 +364,21 @@ export class HomeComponent implements OnInit {
   loadImages(): void {
     this.apiService.GetImages().subscribe({
       next: (data: any) => {
-        console.log('API response:', data);
         this.images = this.images.concat(data);
         this.currentPage++;
-        
-        const baseUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages'; // Set this based on your needs
-  
+        // Process each image object directly from the data array
         this.images.forEach((image: any) => {
-          // Form the full URL if necessary
-          const fullUrl = image.imageUrl.startsWith('http') ? image.imageUrl : baseUrl + image.imageUrl;
-  
-          this.Imgslst.push({ 
-            Image: fullUrl, 
-            ImageDescription: image.imageDescription 
-          });
+          // Now directly logging and pushing image names, since each item in the array is an image object
+          this.Imgslst.push({ Image: 'assets/img' + image.folder + image.imageName, ImageDescription: image.imageDescription });
         });
-  
-        console.log('Updated Imgslst:', this.Imgslst); // Log the final image list to verify
+
+        // Log the full list after updates
       },
       error: (error: any) => {
         console.error('Error fetching images', error);
       }
     });
   }
-  
 
 
   loadMoreImages(): void {
