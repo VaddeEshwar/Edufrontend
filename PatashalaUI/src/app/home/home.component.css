@@ -15,7 +15,7 @@
 }
 
 .border-primary{
-    border: 1px solid #d01d5e !important;
+    /* border: 1px solid #d01d5e !important; */
     border-radius: 10px;
 }
 .text-primary {

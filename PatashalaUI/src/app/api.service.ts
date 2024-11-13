@@ -16,6 +16,8 @@ export class ApiService {
   testprodbaseurl= 'https://localhost:44388/api/';// 
   apiUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages';
   bannerUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages?eventType=Banner';
+  BatchAnnouncement ='https://patashalapi.azurewebsites.net/api/GettheImages?eventType=Batch_announcement';
+  
   isUserAdmin(): boolean {
     const isAdmin = localStorage.getItem("isadmin");
     return isAdmin === 'true';
@@ -74,20 +76,7 @@ export class ApiService {
         "userId": userid,
         "role": roleid,
         "isadmin": admin
-        // "userId": userid,
-        // "firstName": "string",
-        // "lastName": "string",
-        // "email": "string",
-        // "username": "string",
-        // "role": roleid,
-        // "isactive": true,
-        // "passwordhash": "string",
-        // "ipaddress": "string",
-        // "userverified": "string",
-        // "usertoken": "string",
-        // "tokenstartdate": "2023-12-28T12:30:31.641Z",
-        // "tokenenddate": "2023-12-28T12:30:31.641Z",
-        // "isadmin": true
+      
       }
     
     const headers= new HttpHeaders().set('content-type', 'application/json')
@@ -117,6 +106,10 @@ export class ApiService {
   } 
   public NewGetbannerImages(): Observable<any> {
     const url = `${this.bannerUrl}`;
+    return this.httpClient.get<any>(url);
+  }
+  public NewBatchannImage(): Observable<any> {
+    const url = `${this.BatchAnnouncement}`;
     return this.httpClient.get<any>(url);
   }
 }

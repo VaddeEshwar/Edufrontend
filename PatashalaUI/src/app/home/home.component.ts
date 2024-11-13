@@ -5,6 +5,7 @@ import { ApiService } from '../api.service';
 import { FormGroup, FormControl, Validators, FormArray } from '@angular/forms';
 import { EnquiryForm } from './enquiry-form.model';
 import { MessageService } from 'primeng/api';
+import { Router } from '@angular/router';
 interface dropdownOptions {
   label: string;
   value: string;
@@ -40,9 +41,10 @@ export class HomeComponent implements OnInit {
   successMessageindialog: any;
   firsttime: string = "true";
   showDialog: boolean = false; // Flag to control visibility of p-dialog
+
   constructor(private httpClient: HttpClient,
     private apiService: ApiService,
-    private messageService: MessageService) {
+    private messageService: MessageService, public router: Router) {
   }
   customOptions: OwlOptions = {
     loop: true,
@@ -390,6 +392,9 @@ export class HomeComponent implements OnInit {
       this.images = [];
       this.loadImages();
     }
+  }
+  course(){
+    this.router.navigate(['ca']);
   }
 }
 
