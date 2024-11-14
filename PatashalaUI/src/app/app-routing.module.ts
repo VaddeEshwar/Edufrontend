@@ -21,7 +21,9 @@ import { StudyHubVideosComponent } from './study-hub-videos/study-hub-videos.com
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
 import { CreatemenuComponent } from './createmenu/createmenu.component';
 import { ViewEnquiriesComponent } from './view-enquiries/view-enquiries.component';
-
+import { ExamnoticeComponent } from './exam-notice/exam-notice.component';
+import { CareeroppurtunitiesComponent} from './careeroppurtunities/careeroppurtunities.component';
+import { EducationalvideosComponent} from './educationalvideos/educationalvideos.component'
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'aboutus', component:AboutUsComponent},
@@ -37,14 +39,18 @@ const routes: Routes = [
   {path:'acca', component:AccaComponent},
   {path:'cima', component:CimaComponent},
   {path:'cpa', component:CpaComponent},
-  {path:'leadershipteam', component:OurTeamComponent},
+  {path:'RamMohanKomanduri', component:OurTeamComponent},
   {path:'cima_us', component:CimaUsComponent},
   {path:'online_live_classes', component:OnlineLiveClassesComponent},
   {path:'study_hub_videos', component:StudyHubVideosComponent},
   {path:'vision-mission',component:VisionMissionComponent},
   {path:'createmenu', component:CreatemenuComponent},
   {path:'view-enquiries', component:ViewEnquiriesComponent},
-  {path:'', component:HomeComponent}
+  {path:'', component:HomeComponent},
+  {path:'examnotice', component:ExamnoticeComponent},
+  {path:'careeroppur', component:CareeroppurtunitiesComponent},
+  {path:'VideosByFaculty', component:EducationalvideosComponent}
+  
 ];
 
 @NgModule({

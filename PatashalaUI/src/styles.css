@@ -148,6 +148,7 @@ font-weight: 200;
 }
 .mainNav {
   margin-top: 0px;
+  height: 100px;
 }
 .mainNav .navbar-nav {
   padding-top: 0px;
@@ -242,7 +243,7 @@ display: block;
 }
 
 .features-icons {
-  padding-top: 7rem;
+  padding-top: 4rem;
   padding-bottom: 7rem;
 }
 
@@ -929,7 +930,7 @@ footer.footerBg {
   border: 1px solid #e5e7eb !important;
 }
 .top120{
-  top: 120px;
+  top: 100px;
   z-index: 1019;
   padding: 20px auto;
 }

@@ -12,24 +12,24 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active" *ngIf="imageData.length > 1; else noData">
-                <img [src]="imageData[0].imageUrl" alt="patshala" class="mb-3 img-data" height="550">
+                <img [src]="imageData[0].imageUrl" alt="Ram Mohan Komanduri" class="mb-3 img-data" style="width: 100%;height: 450px;">
 
             </div>
             <div class="carousel-item " *ngIf="imageData.length > 1; else noData">
-                <img [src]="imageData[1].imageUrl" alt="patshala" class="mb-3 img-data" height="550">
+                <img [src]="imageData[1].imageUrl" alt="Ram Mohan Komanduri" class="mb-3 img-data" style="width: 100%;height: 450px;">
             </div>
             <div class="carousel-item " *ngIf="imageData.length > 1; else noData">
-                <img [src]="imageData[3].imageUrl" alt="patshala" class="mb-3 img-data" width="1349" height="550">
+                <img [src]="imageData[3].imageUrl" alt="Ram Mohan Komanduri" class="mb-3 img-data" style="width: 100%;height: 450px;">
             </div>
            
             <ng-template #noData>
                 <p>No images available.</p>
             </ng-template>
             <!-- <div class="carousel-item ">
-                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="patshala" class="mb-3 img-data">
+                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="Ram Mohan Komanduri" class="mb-3 img-data">
               </div>
               <div class="carousel-item ">
-                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="patshala" class="mb-3 img-data">
+                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="Ram Mohan Komanduri" class="mb-3 img-data">
               </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -64,7 +64,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <img src="assets/img/banner-img-1.png" alt="Patshala Institutions in Hyderabad">
+                        <img src="assets/img/banner-img-1.png" alt="Ram Mohan Komanduri Institutions in Hyderabad">
                     </div>
                     <h3>Live Classes</h3>
                     <p class="mb-0">Providing personalized mentoring throughout their course journey.</p>
@@ -73,7 +73,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <img src="assets/img/Sample-Recordings-Image.png" alt="Patshala Institutions in Hyderabad">
+                        <img src="assets/img/Sample-Recordings-Image.png" alt="Ram Mohan Komanduri Institutions in Hyderabad">
                     </div>
                     <h3>Recordings</h3>
                     <p class="mb-0">Interactive live stream classes and recorded Video lectures.</p>
@@ -82,7 +82,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <img src="assets/img/select-video.png" alt="Patshala Institutions in Hyderabad">
+                        <img src="assets/img/select-video.png" alt="Ram Mohan Komanduri Institutions in Hyderabad">
                     </div>
                     <h3>Selected Videos</h3>
                     <p class="mb-0">Regular Doubt Sessions.</p>
@@ -91,7 +91,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <img src="assets/img/study-hub.jpeg" alt="Patshala Institutions in Hyderabad">
+                        <img src="assets/img/study-hub.jpeg" alt="Ram Mohan Komanduri Institutions in Hyderabad">
                     </div>
                     <h3>Study Hub</h3>
                     <p class="mb-0">Mock Tests, Approved study material.</p>
@@ -130,56 +130,57 @@
                         <div class="row special learncard text-center py-5 broadcost">
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0" (click)="course()">
-                                    <img src="assets/img/course_bg.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                    <img src="../../assets/img/Gallery/Academic-img/ca.jpg"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CA-(Chartered Accountant)</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0" (click)="course()">
-                                    <img src="assets/img/Gallery/Academic-img/10.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
-                                        class="mb-3">
+                                    <img src="../../assets/img/Gallery/Academic-img/cs.jpg"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
+                                        class="mb-3 border">
                                     <h4>CS-(Company Secretary )</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="assets/img/whowedo.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
-                                        class="mb-3">
+                                    <img src="../../assets/img/Gallery/Academic-img/cma.jpg"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
+                                        class="mb-3 border">
                                     <h4>CMA-(Cost Management Accountants)</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="assets/img/course-113.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
-                                        class="mb-3">
+                                    <img src="../../assets/img/Gallery/Academic-img/images.jpg"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
+                                        class="mb-3 border">
                                     <h4>ACCA(UK)-(Association of Chartered Certified Accountants)</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="assets/img/course-08.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
-                                        class="mb-3">
-                                    <h4>CIMA(UK)-(Chartered Institute of Management Accountants)</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="assets/img/course-09.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                    <img src="../../assets/img/Gallery/Academic-img/cma.jpg"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CMA(US)-(Cost and Management Accountant)</h4>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="assets/img/course-09.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                    <img src="../../assets/img/Gallery/Academic-img/Cima_logo.png"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
+                                        class="mb-3 border">
+                                    <h4>CIMA(UK)-(Chartered Institute of Management Accountants)</h4>
+                                </div>
+                            </div>
+                           
+                            <div class="col-md-6 col-lg-4">
+                                <div class="global card shadow rounded border-0"(click)="course()">
+                                    <img src="../../assets/img/Gallery/Academic-img/images.png"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CAP(US)-(Certified Public Accountant)</h4>
                                 </div>
@@ -192,7 +193,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
                                     <img src="assets/img/blog-1.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CLAT-(Common Law Admission Test)</h4>
                                 </div>
@@ -200,7 +201,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
                                     <img src="assets/img/blog-2.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>IPMAT-(Integrated Programme in Management Aptitude Test)</h4>
                                 </div>
@@ -208,7 +209,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
                                     <img src="assets/img/blog-3.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CAT-(Common Admission Test)</h4>
                                 </div>
@@ -216,7 +217,7 @@
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
                                     <img src="assets/img/blog-4.jpg"
-                                        alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                                        alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>ICET-(Integrated Common Entrance Test) </h4>
                                 </div>
@@ -233,7 +234,7 @@
 
 
 <!-- course -->
-<section class="course">
+<!-- <section class="course">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -244,7 +245,7 @@
                             <div class="card-body">
                                 <h3>{{image.ImageDescription}}</h3>
                                 <img [src]="image.Image"
-                                    alt="Patshala is one of the best Commerce and Management institutions in Hyderabad" />
+                                    alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad" />
                             </div>
                         </div>
                     </ng-template>
@@ -252,10 +253,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- end course -->
 <!-- values -->
-<section class="values">
+<!-- <section class="values">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center py-4">
@@ -264,7 +265,7 @@
                     <div class="circle_body circleOne">
                         <a [routerLink]="['/vision-mission']">
                             <img src="assets/img/mission.png"
-                                alt="Patshala is one of the best Commerce and Management institutions in Hyderabad">
+                                alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad">
                             <h3 class="my-2">Mission</h3>
                             <p>To produce skilled professionals and provide...</p>
                         </a>
@@ -272,7 +273,7 @@
                     <div class="circle_body circleTwo">
                         <a [routerLink]="['/vision-mission']">
                             <img src="assets/img/vission.png"
-                                alt="Patshala is one of the best Commerce and Management institutions in Hyderabad">
+                                alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad">
                             <h3 class="my-2">Vision</h3>
                             <p>Our mission is to provide high-quality education...</p>
                         </a>
@@ -283,7 +284,7 @@
 
         </div>
     </div>
-</section>
+</section> -->
 <section class="values p-5">
     <div class="container">
         <div class="row">
@@ -295,19 +296,19 @@
             <div class="col-lg-3 offset-1">
                 <div class="card">
                     <img class="card-img-top" src="assets/img/Gallery/achievement/achievement-1.jpeg"
-                        alt="Patshala Academy">
+                        alt="Ram Mohan Komanduri Academy">
                 </div>
             </div>
 
             <div class="col-lg-3">
                 <div class="card">
                     <img class="card-img-top" src="assets/img/Gallery/achievement/achievement-2.jpeg"
-                        alt="Patshala Academy">
+                        alt="Ram Mohan Komanduri Academy">
                 </div>
             </div>
             <div class="col-lg-3">
                 <div>
-                    <img src="assets/img/Gallery/achievement/achievement-3.jpeg" alt="Patshala Academy" height="60">
+                    <img src="assets/img/Gallery/achievement/achievement-3.jpeg" alt="Ram Mohan Komanduri Academy" height="60">
                 </div>
             </div>
         </div>
@@ -408,7 +409,7 @@
                                 {{test.testimonialresponses}}
                             </p>
                             <div class="testimonial-content">
-                                <div class="pic"><img src="assets/img/testimonials-1.jpg"  alt="Patshala Institutions in Hyderabad"></div>
+                                <div class="pic"><img src="assets/img/testimonials-1.jpg"  alt="Ram Mohan Komanduri Institutions in Hyderabad"></div>
                                 <h3 class="title">{{test.createdBy}}</h3>
                                 <span class="post">{{test.testimonialId}}</span>
                             </div>
@@ -423,7 +424,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
                         </p>
                         <div class="testimonial-content">
-                            <div class="pic"><img src="assets/img/testimonials-1.jpg"  alt="Patshala Institutions in Hyderabad"></div>
+                            <div class="pic"><img src="assets/img/testimonials-1.jpg"  alt="Ram Mohan Komanduri Institutions in Hyderabad"></div>
                             <h3 class="title">williamson</h3>
                             <span class="post">Web Developer</span>
                         </div>
@@ -434,7 +435,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
                         </p>
                         <div class="testimonial-content">
-                            <div class="pic"><img src="assets/img/testimonials-2.jpg"  alt="Patshala Institutions in Hyderabad"></div>
+                            <div class="pic"><img src="assets/img/testimonials-2.jpg"  alt="Ram Mohan Komanduri Institutions in Hyderabad"></div>
                             <h3 class="title">Kristina</h3>
                             <span class="post">Web Designer</span>
                         </div>
@@ -445,7 +446,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
                         </p>
                         <div class="testimonial-content">
-                            <div class="pic"><img src="assets/img/testimonials-3.jpg"  alt="Patshala Institutions in Hyderabad"></div>
+                            <div class="pic"><img src="assets/img/testimonials-3.jpg"  alt="Ram Mohan Komanduri Institutions in Hyderabad"></div>
                             <h3 class="title">Steve Thomas</h3>
                             <span class="post">Web Developer</span>
                         </div>
@@ -456,7 +457,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at, sagittis quis neque. Praesent.
                         </p>
                         <div class="testimonial-content">
-                            <div class="pic"><img src="assets/img/testimonials-2.jpg"  alt="Patshala Institutions in Hyderabad"></div>
+                            <div class="pic"><img src="assets/img/testimonials-2.jpg"  alt="Ram Mohan Komanduri Institutions in Hyderabad"></div>
                             <h3 class="title">Kristina</h3>
                             <span class="post">Web Designer</span>
                         </div>
