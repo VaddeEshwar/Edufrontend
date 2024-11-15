@@ -21,16 +21,10 @@
             <div class="carousel-item " *ngIf="imageData.length > 1; else noData">
                 <img [src]="imageData[3].imageUrl" alt="Ram Mohan Komanduri" class="mb-3 img-data" style="width: 100%;height: 450px;">
             </div>
-           
-            <ng-template #noData>
+          
+                <ng-template #noData>
                 <p>No images available.</p>
             </ng-template>
-            <!-- <div class="carousel-item ">
-                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="Ram Mohan Komanduri" class="mb-3 img-data">
-              </div>
-              <div class="carousel-item ">
-                <img [src]="imageData.imageUrl ? imageData.imageUrl : 'assets/img/Gallery/Faculty/avathar.jpg'" alt="Ram Mohan Komanduri" class="mb-3 img-data">
-              </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -154,7 +148,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="../../assets/img/Gallery/Academic-img/images.jpg"
+                                    <img src="../../assets/img/Gallery/Academic-img/ACCA_logo.svg.png"
                                         alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3 border">
                                     <h4>ACCA(UK)-(Association of Chartered Certified Accountants)</h4>
@@ -162,7 +156,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="../../assets/img/Gallery/Academic-img/cma.jpg"
+                                    <img src="../../assets/img/Gallery/Academic-img/CMA-Full-Color_RGB.jpg"
                                         alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
                                     <h4>CMA(US)-(Cost and Management Accountant)</h4>
@@ -179,10 +173,10 @@
                            
                             <div class="col-md-6 col-lg-4">
                                 <div class="global card shadow rounded border-0"(click)="course()">
-                                    <img src="../../assets/img/Gallery/Academic-img/images.png"
+                                    <img src="../../assets/img/Gallery/Academic-img/aicpa.jpg"
                                         alt="Ram Mohan Komanduri is one of the best Commerce and Management institutions in Hyderabad"
                                         class="mb-3">
-                                    <h4>CAP(US)-(Certified Public Accountant)</h4>
+                                    <h4>CPA(US)-(Certified Public Accountant)</h4>
                                 </div>
                             </div>
                         </div>

@@ -945,3 +945,6 @@ footer.footerBg {
       max-width: 1220px !important;
   }
 }
+table td a{
+  color: #000;
+}
