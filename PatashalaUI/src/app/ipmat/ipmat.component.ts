@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './ipmat.component.html',
   styleUrls: ['./ipmat.component.css']
 })
-export class CaComponent {
+export class IpmatComponent {
   listMenuResponse:any = [];
   caresponses:any =[];
   menuId: any;
@@ -29,16 +29,16 @@ export class CaComponent {
       
       this.listMenuResponse = data.listMenuSubMenu;
           this.listMenuResponse.forEach((element: { listMenuResponse: any; }) => {
-            element.listMenuResponse.forEach((x: { responses: any; menu_Id :any ;responses_Subheading:any})=>
+            element.listMenuResponse.forEach((x: { responses: any; menu_Id :any ;content_Subheading:any})=>
               {
                 // menu_Id:9 submenu_id:2
                // if(x.menu_Id == this.menuId){
-                if(x.menu_Id == 23){
+                if(x.menu_Id == 50){
 
                   
                   this.caresponses.push({menu:x.responses});
-                  if (x.responses_Subheading!=null)
-                      this.responses_Subheading= x.responses_Subheading;
+                  if (x.content_Subheading!=null)
+                      this.responses_Subheading= x.content_Subheading;
                 }
                 
               })

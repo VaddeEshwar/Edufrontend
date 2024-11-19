@@ -123,6 +123,6 @@ export class ApiService {
     return this.httpClient.get<any>(url)
   }
   public PostExamNoties(input: any) {
-    return this.httpClient.post<any>(`${this.newApis}GetZoomLinks`, input, this.httpOptions)
+    return this.httpClient.post<any>(`${this.newApis}PostZoomLink`, input, this.httpOptions)
   }
 }

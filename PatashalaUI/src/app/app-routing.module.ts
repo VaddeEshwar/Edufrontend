@@ -23,7 +23,17 @@ import { CreatemenuComponent } from './createmenu/createmenu.component';
 import { ViewEnquiriesComponent } from './view-enquiries/view-enquiries.component';
 import { ExamnoticeComponent } from './exam-notice/exam-notice.component';
 import { CareeroppurtunitiesComponent} from './careeroppurtunities/careeroppurtunities.component';
-import { EducationalvideosComponent} from './educationalvideos/educationalvideos.component'
+import { EducationalvideosComponent} from './educationalvideos/educationalvideos.component';
+import { CreateeaxmnotificationComponent} from './create-eaxmnotification/create-eaxmnotification.component';
+import { ClatComponent} from './clat/clat.component';
+import { SlatComponent} from './slat/slat.component';
+import { TsicetComponent} from './ts-icet/ts-icet.component';
+import { TslawcetComponent} from './ts-lawcet/ts-lawcet.component';
+import { IpmatComponent } from './ipmat/ipmat.component';
+import { CatComponent} from './cat/cat.component';
+import {AiletComponent } from './ailet/ailet.component';
+
+// import { } from '';
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'aboutus', component:AboutUsComponent},
@@ -49,8 +59,17 @@ const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'examnotice', component:ExamnoticeComponent},
   {path:'careeroppur', component:CareeroppurtunitiesComponent},
-  {path:'VideosByFaculty', component:EducationalvideosComponent}
-  
+  {path:'VideosByFaculty', component:EducationalvideosComponent},
+  {path:'create-eaxmnotification', component:CreateeaxmnotificationComponent},
+  {path:'clat', component:ClatComponent},
+  {path:'slat', component:SlatComponent},
+  {path:'tsicet',component:TsicetComponent},
+  {path:'tslawcet',component:TslawcetComponent},
+  {path:'ipmat',component:IpmatComponent},
+  {path:'cat',component:CatComponent},
+  {path:'ailat',component:AiletComponent}
+ 
+  // {path:'',component:}
 ];
 
 @NgModule({

@@ -39,8 +39,18 @@ import { OnlineLiveClassesComponent } from './online-live-classes/online-live-cl
 import { VisionMissionComponent } from './vision-mission/vision-mission.component';
 import { CreatemenuComponent } from './createmenu/createmenu.component';
 import { ViewEnquiriesComponent } from './view-enquiries/view-enquiries.component';
-import { DowloadFileService } from './dowload-file.service'
-
+import { DowloadFileService } from './dowload-file.service';
+import { EducationalvideosComponent} from './educationalvideos/educationalvideos.component';
+import { ExamnoticeComponent} from './exam-notice/exam-notice.component';
+import { CreateeaxmnotificationComponent} from './create-eaxmnotification/create-eaxmnotification.component'
+import { ClatComponent} from './clat/clat.component';
+import { SlatComponent} from './slat/slat.component';
+import { TsicetComponent}from './ts-icet/ts-icet.component';
+import { TslawcetComponent} from './ts-lawcet/ts-lawcet.component';
+import { IpmatComponent} from './ipmat/ipmat.component';
+import { CatComponent} from './cat/cat.component';
+import { AiletComponent} from './ailet/ailet.component';
+// import { } from '';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +77,16 @@ import { DowloadFileService } from './dowload-file.service'
     VisionMissionComponent,
     CreatemenuComponent,
     ViewEnquiriesComponent,
+    EducationalvideosComponent,
+    ExamnoticeComponent,
+    CreateeaxmnotificationComponent,
+    ClatComponent,
+    SlatComponent,
+    TsicetComponent,
+    TslawcetComponent,
+    IpmatComponent,
+    CatComponent,
+    AiletComponent
   ],
   imports: [
     BrowserModule

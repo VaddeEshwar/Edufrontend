@@ -156,8 +156,8 @@ font-weight: 200;
   font-style: 15px !important;
 }
 .mainNav .navbar-nav li.nav-item a {
-  /* font-size: 1rem; */
-  padding-right: 22px;
+  font-size: 1.1rem;
+  padding-right: 18px;
   transition: all .5s ease-in-out;
   cursor: pointer;
 }
