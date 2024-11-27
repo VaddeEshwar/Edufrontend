@@ -5,11 +5,11 @@
   import { ActivatedRoute } from '@angular/router';
   
   @Component({
-    selector: 'app-slat',
-    templateUrl: './slat.component.html',
-    styleUrls: ['./slat.component.css']
+    selector: 'app-clat',
+    templateUrl: './clat.component.html',
+    styleUrls: ['./clat.component.css']
   })
-  export class SlatComponent {
+  export class ClatComponent {
     listMenuResponse:any = [];
     cmaresponses:any =[];
     menuId: any;
@@ -35,12 +35,10 @@
                 {
                   // menu_Id:9 submenu_id:2
                  // if(x.menu_Id == this.menuId){
-                  if(x.menu_Id == 45){   
-                  
+                  if(x.menu_Id == 46){                    
                     this.cmaresponses.push({menu:x.responses});
                     if (x.content_Subheading!=null)
                     this.Subheading= x.content_Subheading;
-                  
                   }
                   
                 })

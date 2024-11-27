@@ -60,6 +60,9 @@
     .logindropdown .dropdown-menu.show{
         left: 0;
     }
+    .header-r{
+        display: none;
+    }
 }
 @media (max-width:480px){
     .mobilelogin{
@@ -68,6 +71,7 @@
     .mobhide{
         display: none;
     }
+   
 }
 .text-white:hover {
     color: #ffffff !important;
@@ -89,12 +93,12 @@
     text-decoration: underline;
     transform: rotate(-90deg);
 } 
-.facebook{
-    color: rgb(11 87 208) !important;
-}
-.whatsapp{
-    color: #38e238!important;
-}
-.youtube{
-    color: rgb(245, 40, 40) !important;
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background: #fff;
+    padding: 0 27px;
+    width: 59px;
 }

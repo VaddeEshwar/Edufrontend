@@ -67,7 +67,7 @@ const routes: Routes = [
   {path:'tslawcet',component:TslawcetComponent},
   {path:'ipmat',component:IpmatComponent},
   {path:'cat',component:CatComponent},
-  {path:'ailat',component:AiletComponent}
+  {path:'ailet',component:AiletComponent}
  
   // {path:'',component:}
 ];

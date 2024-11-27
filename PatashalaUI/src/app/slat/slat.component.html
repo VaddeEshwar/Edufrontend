@@ -10,7 +10,7 @@
                         <a href="javascript:void(0)" class="text-decoration-none textprimary">Courses <i
                                 class="bi bi-chevron-right"></i></a> <a href="javascript:void(0)"
                             class="text-decoration-none textprimary">Domestic Courses <i
-                                class="bi bi-chevron-right"></i></a> <span class="textprimary">CLAT</span>
+                                class="bi bi-chevron-right"></i></a> <span class="textprimary">SLAT</span>
                     </div>
                 </div>
             </div>
@@ -50,11 +50,9 @@
             </div>
             <div class="col-md-9 col-sm-12">
                 <br>
-                <p *ngFor="let result of cmaresponses" style="text-align: justify">
-                    {{result.menu}}</p>
-
-
-                    
+             <div *ngFor="let response of cmaresponses">
+                        <div [innerHTML]="response.menu"></div>
+                    </div>
             </div>
         </div>
     </div>
