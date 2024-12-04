@@ -32,6 +32,7 @@ import { TslawcetComponent} from './ts-lawcet/ts-lawcet.component';
 import { IpmatComponent } from './ipmat/ipmat.component';
 import { CatComponent} from './cat/cat.component';
 import {AiletComponent } from './ailet/ailet.component';
+import {LoginComponent} from './login/login.component'
 
 // import { } from '';
 const routes: Routes = [
@@ -67,9 +68,8 @@ const routes: Routes = [
   {path:'tslawcet',component:TslawcetComponent},
   {path:'ipmat',component:IpmatComponent},
   {path:'cat',component:CatComponent},
-  {path:'ailet',component:AiletComponent}
- 
-  // {path:'',component:}
+  {path:'ailet',component:AiletComponent},
+  {path:'login',component:LoginComponent}
 ];
 
 @NgModule({

@@ -5,7 +5,8 @@
         <div class="container">
             <ul class="nav">
                 <li class="list-inline-item me-4">
-                    <p class="text-white mb-0"><i class="bi-phone fs-5 "></i><span style="font-family: auto;">{{phone}}</span></p>
+                    <p class="text-white mb-0"><i class="bi-phone fs-5 "></i><span
+                            style="font-family: auto;">{{phone}}</span></p>
                 </li>
                 <li class="list-inline-item me-4">
                     <p class="text-white mb-0"><i class="bi-envelope fs-5 "></i> {{email}}</p>
@@ -16,16 +17,24 @@
             </ul>
             <ul class="nav">
                 <li class="list-inline-item me-4">
-                    <a href="https://www.facebook.com/share/aMzdKrvX5zZnsydM/?mibextid=kFxxJD" target="_blank"><img src="../../assets/img/facebook-1-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala " width="28"> </a>
+                    <a href="https://www.facebook.com/share/aMzdKrvX5zZnsydM/?mibextid=kFxxJD" target="_blank"><img
+                            src="../../assets/img/facebook-1-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala "
+                            width="28"> </a>
                 </li>
                 <li class="list-inline-item me-4">
-                    <a href="https://www.instagram.com/patshalaindia/?igsh=bzkydzNxMHpvMmNz" target="_blank"><img src="../../assets/img/instagram-1-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala" width="28"></a>
+                    <a href="https://www.instagram.com/patshalaindia/?igsh=bzkydzNxMHpvMmNz" target="_blank"><img
+                            src="../../assets/img/instagram-1-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala"
+                            width="28"></a>
                 </li>
                 <li class="list-inline-item me-4">
-                    <a href="https://www.youtube.com/@PatshalaIndia" target="_blank"><img src="../../assets/img/youtube-you-tube-video-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala" width="28"></a>
+                    <a href="https://www.youtube.com/@PatshalaIndia" target="_blank"><img
+                            src="../../assets/img/youtube-you-tube-video-svgrepo-com.svg"
+                            alt="Ram Mohan Komanduri patshala" width="28"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://wa.link/hyd3ob" target="_blank"><img src="../../assets/img/whatsapp-whats-app-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala" width="28"></a>
+                    <a href="https://wa.link/hyd3ob" target="_blank"><img
+                            src="../../assets/img/whatsapp-whats-app-svgrepo-com.svg" alt="Ram Mohan Komanduri patshala"
+                            width="28"></a>
                 </li>
                 <li class="list-inline-item logindropdown">
                     <a href="#!"><i class="bi bi-person fs-5 text-white" *ngIf="validUser"
@@ -33,25 +42,22 @@
                     <!-- <a href="#!" class="mobilelogin"><i class="bi bi-person fs-5 text-white" *ngIf="!validUser" (click)="loginuser()">Login</i></a> -->
                     <div class="dropdown">
                         <a href="#!" class="dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="bi bi-person fs-5 text-white" *ngIf="!validUser">Login</i></a>
+                                class="bi bi-person fs-5 text-white" *ngIf="!validUser" (click)="login()">Login</i></a>
 
-                        <ul class="dropdown-menu">
+                        <!-- <ul class="dropdown-menu">
                             <form [formGroup]="loginForm" (ngSubmit)="loginSubmit(loginForm.value)">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 mb-2">
 
-                                            <!-- <label for="username" class="form-label">username</label> -->
                                             <input type="username" class="form-control" id="username"
                                                 formControlName="username" placeholder="User Name">
 
                                         </div>
                                         <div class="col-md-12 mb-2">
 
-                                            <!-- <label for="password" class="form-label">Password  </label> -->
                                             <input type="password" class="form-control" id="password"
                                                 formControlName="password" placeholder="Password">
-                                            <!-- <div id="emailHelp" class="form-text">Enter password.</div> -->
 
                                         </div>
                                         <div class="col-md-12 text-end tpad bpad">
@@ -61,49 +67,62 @@
                                     </div>
                                 </div>
                             </form>
-                        </ul>
+                        </ul> -->
                     </div>
                 </li>
             </ul>
         </div>
     </div>
-
-    <div class="pr">
-        <div class="col-md-2 news-scroll-panel">
-            <div class="flash-box123">
-                <p>Announcement</p>
-            </div>
-        </div>
-        <div class="col-md-10 news-scroll-panel">
-            <marquee scrollamount="04" onMouseOver="stop()" onMouseOut="start()">
-                <div class="contscr">
-                    <div>
-                        <div class="ann-content text-white"><i class="fa fa-arrow-right" aria-hidden="true"></i> <img
-                                src="../../assets/img/new.gif"><b>New Branch:-</b><span>New Branch Started at 63/A,Vengal Rao Nagar,SR Nagar,Hyderabad,Telangana 500038</span>
-                            <span></span>
-                        </div>
-                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div>
-                        <div class="ann-content text-white"><i class="fa fa-arrow-right" aria-hidden="true"></i> <img
-                                src="../../assets/img/new.gif"><b>New Batches:-</b><span> <a href="assets/img/Himayathnagar.jpeg" target="_blank">New ACCA Batches Now Avaliable at Our Himayathnagar Branch</a></span>
-                            <span></span>
-                        </div>
-                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div>
-                        <div class="ann-content text-white"> <i class="fa fa-arrow-right" aria-hidden="true"></i><img
-                                src="../../assets/img/new.gif"> <b>Live Classes:-</b>
-                            <span>Providing personalized mentoring throughout their course journey.</span>
-                        </div>
-                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div>
-                        <div class="ann-content text-white"><i class="fa fa-arrow-right" aria-hidden="true"></i> <img
-                                src="../../assets/img/new.gif"><b>Recordings:-</b>
-                            <span>Interactive live stream classes and recorded Video lectures.</span>
+    <div class="sticky-top top120">
+        <section class="aboutus">
+            <div class="container position-relative">
+                <div class="row justify-content-end">
+                    <div class="col-md-2 news-scroll-panel">
+                        <div class="flash-box123">
+                            <p>Announcement</p>
                         </div>
                     </div>
+                    <div class="col-md-10 news-scroll-panel">
+                        <marquee scrollamount="04" onMouseOver="stop()" onMouseOut="start()">
+                            <div class="contscr">
+                                <div>
+                                    <div class="ann-content text-white"><i class="fa fa-arrow-right"
+                                            aria-hidden="true"></i> <img src="../../assets/img/new.gif"><b>New
+                                            Branch:-</b><span>New Branch Started at 63/A,Vengal Rao Nagar,SR
+                                            Nagar,Hyderabad,Telangana 500038</span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div>
+                                    <div class="ann-content text-white"><i class="fa fa-arrow-right"
+                                            aria-hidden="true"></i> <img src="../../assets/img/new.gif"><b>New
+                                            Batches:-</b><span> <a href="assets/img/Himayathnagar.jpeg"
+                                                target="_blank">New ACCA Batches Now Avaliable at Our Himayathnagar
+                                                Branch</a></span>
+                                        <span></span>
+                                    </div>
+                                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div>
+                                    <div class="ann-content text-white"> <i class="fa fa-arrow-right"
+                                            aria-hidden="true"></i><img src="../../assets/img/new.gif"> <b>Live
+                                            Classes:-</b>
+                                        <span>Providing personalized mentoring throughout their course journey.</span>
+                                    </div>
+                                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div>
+                                    <div class="ann-content text-white"><i class="fa fa-arrow-right"
+                                            aria-hidden="true"></i> <img
+                                            src="../../assets/img/new.gif"><b>Recordings:-</b>
+                                        <span>Interactive live stream classes and recorded Video lectures.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </marquee>
+                    </div>
                 </div>
-            </marquee>
-        </div>
+            </div>
+        </section>
     </div>
 
 </div>
@@ -119,14 +138,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav" *ngIf="!isAdmin">
+                <ul class="navbar-nav" *ngIf="!isAdmin">
                     <li class="nav-item dropdown"><a class="nav-link  text-dark dropdown-toggle">Home</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/aboutus']">About Patshala</a></li>
-                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/vision-mission']">Vission & Mission</a></li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" [routerLink]="['/ourteam']">Our Team</a>
+                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/aboutus']">About
+                                    Patshala</a></li>
+                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/vision-mission']">Vission &
+                                    Mission</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                    [routerLink]="['/ourteam']">Our Team</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" [routerLink]="['/RamMohanKomanduri']">Leadership Team</a></li>
+                                    <li><a class="dropdown-item" [routerLink]="['/RamMohanKomanduri']">Leadership
+                                            Team</a></li>
                                     <li><a class="dropdown-item" [routerLink]="['/ourfaculty']">Our Faculty</a></li>
                                 </ul>
                             </li>
@@ -134,40 +157,59 @@
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Course</a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CPC-Commerce Professioanal Courses</a>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CPC-Commerce
+                                    Professioanal Courses</a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">INDIAN COURSES</a>
+                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">INDIAN
+                                            COURSES</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/ca']">CA</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cma']">CMA</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/cs']">CS</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ca']">CA</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cma']">CMA</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cs']">CS</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">GLOBAL COURSES</a>
+                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">GLOBAL
+                                            COURSES</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/acca']">ACCA (UK)</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cima']">CIMA (UK)</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cmaus']">CMA (USA)</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cpa']">CPA (USA)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/acca']">ACCA (UK)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cima']">CIMA (UK)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cmaus']">CMA (USA)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cpa']">CPA (USA)</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CEEC- Competetive Entrance Exam Courses</a>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CEEC- Competetive
+                                    Entrance Exam Courses</a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">LAW</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/clat']">CLAT</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/slat']">SLAT</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/ailet']">AILET</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/tslawcet']">TS LAWCET</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/clat']">CLAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/slat']">SLAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ailet']">AILET</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/tslawcet']">TS LAWCET</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">MANAGEMENT</a>
+                                    <li class="dropdown-submenu"><a
+                                            class="nav-link text-dark dropdown-toggle">MANAGEMENT</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/ipmat']">IPMAT</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/cat']">CAT</a></li>
-                                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/tsicet']">TS ICET</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ipmat']">IPMAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cat']">CAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/tsicet']">TS ICET</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -177,123 +219,153 @@
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Student</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/study_hub_videos']">Study Hub- Videos </a></li>
-                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/online_live_classes']">Online-Live Classes </a></li>
-                            <li class="nav-item"><a class="dropdown-item "[routerLink]="['/recordedvideos']">Resource-Live Classes Recordings </a></li>
+                            <li class="nav-item"><a class="nav-link text-dark"
+                                    [routerLink]="['/study_hub_videos']">Study Hub- Videos </a></li>
+                            <li class="nav-item"><a class="dropdown-item "
+                                    [routerLink]="['/online_live_classes']">Online-Live Classes </a></li>
+                            <li class="nav-item"><a class="dropdown-item "
+                                    [routerLink]="['/recordedvideos']">Resource-Live Classes Recordings </a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle"> News/Announcement </a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/newsandevents']"> New Batches Announcements </a></li>
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/careeroppur']">Career Oppurtunities </a></li>
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/examnotice']"> Exam Notifications </a></li>
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/VideosByFaculty']"> Educational Videos By Faculty </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/newsandevents']"> New Batches
+                                    Announcements </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/careeroppur']">Career
+                                    Oppurtunities </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/examnotice']"> Exam
+                                    Notifications </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/VideosByFaculty']">
+                                    Educational Videos By Faculty </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery </a></li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery </a>
+                    </li>
                     <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/contactus']">Contact Us</a></li>
-                </ul> 
-               <ul class="navbar-nav" *ngIf="isAdmin">
-                <li class="nav-item dropdown"><a class="nav-link  text-dark dropdown-toggle">Home</a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/aboutus']">About Patshala</a></li>
-                        <li class="nav-item"><a class="dropdown-item " [routerLink]="['/vision-mission']">Vission & Mission</a></li>
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" [routerLink]="['/ourteam']">Our Team</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" [routerLink]="['/RamMohanKomanduri']">Leadership Team</a></li>
-                                <li><a class="dropdown-item" [routerLink]="['/ourfaculty']">Our Faculty</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Course</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CPC-Commerce Professioanal
-                                Courses</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">INDIAN
-                                        COURSES</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/ca']">CA</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cma']">CMA</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cs']">CS</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">GLOBAL COURSES</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/acca']">ACCA (UK)</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cima']">CIMA (UK)</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cmaus']">CMA (USA)</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"[routerLink]="['/cpa']">CPA (USA)</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CEEC- Competetive Entrance
-                                Exam Courses</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">LAW</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/clat']">CLAT</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/slat']">SLAT</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/ailet']">AILET</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/tslawcet']">TS LAWCET</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">MANAGEMENT</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/ipmat']">IPMAT</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/cat']">CAT</a></li>
-                                        <li class="nav-item"><a class="nav-link text-dark"
-                                                [routerLink]="['/tsicet']">TS ICET</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                </ul>
+                <ul class="navbar-nav" *ngIf="isAdmin">
+                    <li class="nav-item dropdown"><a class="nav-link  text-dark dropdown-toggle">Home</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/aboutus']">About
+                                    Patshala</a></li>
+                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/vision-mission']">Vission &
+                                    Mission</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle"
+                                    [routerLink]="['/ourteam']">Our Team</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" [routerLink]="['/RamMohanKomanduri']">Leadership
+                                            Team</a></li>
+                                    <li><a class="dropdown-item" [routerLink]="['/ourfaculty']">Our Faculty</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Course</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CPC-Commerce
+                                    Professioanal
+                                    Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">INDIAN
+                                            COURSES</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ca']">CA</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cma']">CMA</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cs']">CS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">GLOBAL
+                                            COURSES</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/acca']">ACCA (UK)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cima']">CIMA (UK)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cmaus']">CMA (USA)</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cpa']">CPA (USA)</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">CEEC- Competetive
+                                    Entrance
+                                    Exam Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a class="nav-link text-dark dropdown-toggle">LAW</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/clat']">CLAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/slat']">SLAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ailet']">AILET</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/tslawcet']">TS LAWCET</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a
+                                            class="nav-link text-dark dropdown-toggle">MANAGEMENT</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/ipmat']">IPMAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/cat']">CAT</a></li>
+                                            <li class="nav-item"><a class="nav-link text-dark"
+                                                    [routerLink]="['/tsicet']">TS ICET</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-                    </ul>
-                </li>
-                <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Student</a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/study_hub_videos']">
-                                Study Hub- Videos </a></li>
-                        <li class="nav-item"><a class="dropdown-item " [routerLink]="['/online_live_classes']">
-                                Online-Live Classes </a></li>
-                        <li class="nav-item"><a class="dropdown-item "
-                                [routerLink]="['/recordedvideos']">Resource-Live Classes Recordings </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle"> News/Announcement </a>
-                    <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Student</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/study_hub_videos']">
+                                    Study Hub- Videos </a></li>
+                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/online_live_classes']">
+                                    Online-Live Classes </a></li>
+                            <li class="nav-item"><a class="dropdown-item "
+                                    [routerLink]="['/recordedvideos']">Resource-Live Classes Recordings </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle"> News/Announcement </a>
+                        <ul class="dropdown-menu">
                             <li class="nav-item"><a class="dropdown-item" [routerLink]="['/newsandevents']"> New
                                     Batches Announcements </a></li>
-                        <li class="nav-item"><a class="dropdown-item" [routerLink]="['/careeroppur']">Career
-                                Oppurtunities </a></li>
-                        <li class="nav-item"><a class="dropdown-item " [routerLink]="['/examnotice']"> Exam Notifications </a></li>
-                        <li class="nav-item"><a class="dropdown-item "[routerLink]="['/VideosByFaculty']"> Educational Videos By Faculty </a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery </a></li>
-                <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle"> Admin </a>
-                    <ul class="dropdown-menu">
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/createmenu']">  Create Menu </a></li>
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/view-enquiries']"> View Enquiries  </a></li>
-                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/create-eaxmnotification']"> Exam Notification   </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/careeroppur']">Career
+                                    Oppurtunities </a></li>
+                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/examnotice']"> Exam
+                                    Notifications </a></li>
+                            <li class="nav-item"><a class="dropdown-item " [routerLink]="['/VideosByFaculty']">
+                                    Educational Videos By Faculty </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery </a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle"> Admin </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/createmenu']"> Create Menu
+                                </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/view-enquiries']"> View
+                                    Enquiries </a></li>
+                            <li class="nav-item"><a class="dropdown-item" [routerLink]="['/create-eaxmnotification']">
+                                    Exam Notification </a></li>
 
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/contactus']">Contact Us</a></li>
-           
-                  </ul> 
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/contactus']">Contact Us</a></li>
+
+                </ul>
             </div>
             <a class="navbar-brand" [routerLink]="['/home']">
-                <img src="assets/img/header-r.png" width="100"alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
+                <img src="assets/img/header-r.png" width="100"
+                    alt="Patshala is one of the best Commerce and Management institutions in Hyderabad"
                     class="mw-100 header-r " />
             </a>
         </div>
@@ -334,7 +406,3 @@
         </div>
     </form>
 </p-dialog> -->
-
-
-
-  

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -50,7 +50,7 @@ import { TslawcetComponent} from './ts-lawcet/ts-lawcet.component';
 import { IpmatComponent} from './ipmat/ipmat.component';
 import { CatComponent} from './cat/cat.component';
 import { AiletComponent} from './ailet/ailet.component';
-// import { } from '';
+ import { LoginComponent} from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,7 +86,8 @@ import { AiletComponent} from './ailet/ailet.component';
     TslawcetComponent,
     IpmatComponent,
     CatComponent,
-    AiletComponent
+    AiletComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule
@@ -107,6 +108,7 @@ import { AiletComponent} from './ailet/ailet.component';
   ,RouterModule
   
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [MessageService,DowloadFileService],
   bootstrap: [AppComponent]
 })
