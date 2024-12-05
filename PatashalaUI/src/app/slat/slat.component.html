@@ -6,16 +6,16 @@
                     <div class="text-white ms-auto">
                         <!-- Page heading-->
                         <h1 class="mb-2">{{Subheading}}</h1>
+                        <div> <a href="javascript:void(0)" class="text-decoration-none textprimary">Courses <i
+                                    class="bi bi-chevron-right"></i></a> <a href="javascript:void(0)"
+                                class="text-decoration-none textprimary">Domestic Courses <i
+                                    class="bi bi-chevron-right"></i></a> <span class="textprimary">SLAT</span></div>
 
-                        <a href="javascript:void(0)" class="text-decoration-none textprimary">Courses <i
-                                class="bi bi-chevron-right"></i></a> <a href="javascript:void(0)"
-                            class="text-decoration-none textprimary">Domestic Courses <i
-                                class="bi bi-chevron-right"></i></a> <span class="textprimary">SLAT</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 </div>
 <section class="container-fluid">
     <div class="container">
@@ -50,9 +50,9 @@
             </div>
             <div class="col-md-9 col-sm-12">
                 <br>
-             <div *ngFor="let response of cmaresponses">
-                        <div [innerHTML]="response.menu"></div>
-                    </div>
+                <div *ngFor="let response of cmaresponses">
+                    <div [innerHTML]="response.menu"></div>
+                </div>
             </div>
         </div>
     </div>

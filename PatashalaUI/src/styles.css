@@ -891,6 +891,11 @@ footer.footerBg {
     margin-left: 0;
     background-color: #ffe0f1;
   }
+  table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    margin: 0 0rem !important;
+  }
 }
 .p-dropdown {
   width: 100%;
@@ -954,7 +959,11 @@ footer.footerBg {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1220px !important;
   }
-  
+  table {
+    caption-side: bottom;
+    border-collapse: collapse;
+   
+  }
 }
 table td a{
   color: #000;
@@ -969,4 +978,16 @@ table td a{
   .news-scroll-panel {
     background-color: #002147;
   }
+
+}
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px !important;
+}
+
+table th {
+  background-color: #808080 !important;
+  color: white !important;
+
 }

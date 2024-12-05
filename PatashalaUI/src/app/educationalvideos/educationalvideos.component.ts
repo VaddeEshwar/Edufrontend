@@ -11,7 +11,6 @@ export class EducationalvideosComponent {
   constructor(private apiService: ApiService, public router: Router) { }
   
   ngOnInit(): void {
-   
     this.apiService.getVideoList().subscribe(
       (data) => {
         console.log('API Response:', data);  

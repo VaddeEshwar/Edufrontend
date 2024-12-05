@@ -18,13 +18,10 @@ export class ApiService {
   bannerUrl = 'https://patashalapi.azurewebsites.net/api/GettheImages?eventType=Banner';
   BatchAnnouncement = 'https://patashalapi.azurewebsites.net/api/GettheImages?eventType=Batch_announcement';
   newApis = 'https://patashalapi.azurewebsites.net/api/';
- 
-
   isUserAdmin(): boolean {
     const isAdmin = localStorage.getItem("isadmin");
     return isAdmin === 'true';
   }
-
   constructor(private httpClient: HttpClient) { }
   // Http Headers
   httpOptions = {
@@ -33,25 +30,20 @@ export class ApiService {
       'accept': 'text/plain'
     }),
   };
-
   //  localStorage.setItem("loggedUserId", data.userId);
   //  localStorage.setItem("userroleId", data.role);
-
   public getData_bak() {
     const headers = new HttpHeaders().set('content-type', 'application/json')
     return this.httpClient.get<any>(`${this.prodbaseurl}GetData`, this.httpOptions);
     // return this.httpClient.get<any>("assets/response_1699881964735.json");
     // return this.httpClient.get<any>(`${this.prodbaseurl}GetData`,this.httpOptions);
-
   }
   public PostEnquiryForm(formData: any): Observable<any> {
     const headers = new HttpHeaders().set('content-type', 'application/json')
     return this.httpClient.post<any>(`${this.prodbaseurl}PostEnquiryForm`, formData, this.httpOptions);
-
   }
 //// username:SureshM password:SureshM123
   public getData() {
-
     let userid = 0;
     let roleid = 0;
     let admin: boolean = false;
@@ -78,9 +70,7 @@ export class ApiService {
       "userId": userid,
       "role": roleid,
       "isadmin": admin
-
     }
-
     const headers = new HttpHeaders().set('content-type', 'application/json')
     return this.httpClient.post<any>(`${this.prodbaseurl}GetResponseData`, requestBody, this.httpOptions);
   }
