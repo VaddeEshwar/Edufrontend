@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ApiService } from '.././api.service'
+import { ApiService } from '.././api.service'
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-educationalvideos',
@@ -9,16 +9,17 @@ import { Router } from '@angular/router';
 export class EducationalvideosComponent {
   videos: any[] = [];
   constructor(private apiService: ApiService, public router: Router) { }
-  
+
   ngOnInit(): void {
-    this.apiService.getVideoList().subscribe(
-      (data) => {
-        console.log('API Response:', data);  
-        this.videos = data;  
-      },
-      (error) => {
-        console.error('Error fetching video list', error);
-      }
-    );
+    this.getVideo()
   }
+  getVideo() {
+    this.apiService.getVideoList().subscribe({
+      next: (data) => {
+        this.videos = data;
+        console.log(data)
+      }
+    })
+  }
+
 }

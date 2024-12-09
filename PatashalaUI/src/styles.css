@@ -978,7 +978,9 @@ table td a{
   .news-scroll-panel {
     background-color: #002147;
   }
-
+  .header-r{
+    display: none;
+}
 }
 tbody, td, tfoot, th, thead, tr {
   border-color: inherit;
@@ -991,3 +993,12 @@ table th {
   color: white !important;
 
 }
+/* @media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+      max-width: 695px !important;
+  }
+  .header-r{
+    top: -9px;
+    position: relative;
+  }
+} */

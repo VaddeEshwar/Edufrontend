@@ -31,12 +31,12 @@ export class CreateeaxmnotificationComponent implements OnInit {
       this.apiService.PostExamNoties(formData).subscribe({
         next: (response) => {
           console.log('Notification saved:', response);
-          alert('Exam notification saved successfully!');
+          // alert('Exam notification saved successfully!');
           this.examnotice.reset(); 
         },
         error: (err) => {
           console.error('Error saving notification:', err);
-          alert('Failed to save the exam notification. Please try again.');
+          // alert('Failed to save the exam notification. Please try again.');
         },
       });
     } else {
