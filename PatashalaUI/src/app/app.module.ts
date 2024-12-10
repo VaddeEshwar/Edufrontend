@@ -50,7 +50,9 @@ import { TslawcetComponent} from './ts-lawcet/ts-lawcet.component';
 import { IpmatComponent} from './ipmat/ipmat.component';
 import { CatComponent} from './cat/cat.component';
 import { AiletComponent} from './ailet/ailet.component';
- import { LoginComponent} from './login/login.component';
+import { LoginComponent} from './login/login.component';
+import { PartnersComponent} from './partners/partners.component';
+import { coursesofferedComponent} from './courses_offered/courses_offered.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,7 +89,9 @@ import { AiletComponent} from './ailet/ailet.component';
     IpmatComponent,
     CatComponent,
     AiletComponent,
-    LoginComponent
+    LoginComponent,
+    PartnersComponent,
+    coursesofferedComponent
   ],
   imports: [
     BrowserModule

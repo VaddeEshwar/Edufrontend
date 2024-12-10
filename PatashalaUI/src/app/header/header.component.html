@@ -242,8 +242,16 @@
                                     Educational Videos By Faculty </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery </a>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark dropdown-toggle">Partners</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="nav-link text-dark"
+                                    [routerLink]="['/partners']">Our Valued Partners </a></li>
+                            <li class="nav-item"><a class="dropdown-item "
+                                    [routerLink]="['/courses_offered']">Courses Offered</a></li>
+                          
+                        </ul>
                     </li>
+                    <li class="nav-item dropdown"><a class="nav-link text-dark" [routerLink]="['/gallery']">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" [routerLink]="['/contactus']">Contact Us</a></li>
                 </ul>
                 <ul class="navbar-nav" *ngIf="isAdmin">

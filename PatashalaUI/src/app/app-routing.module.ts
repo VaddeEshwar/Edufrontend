@@ -33,7 +33,8 @@ import { IpmatComponent } from './ipmat/ipmat.component';
 import { CatComponent} from './cat/cat.component';
 import {AiletComponent } from './ailet/ailet.component';
 import {LoginComponent} from './login/login.component'
-
+import { PartnersComponent} from './partners/partners.component';
+import { coursesofferedComponent} from './courses_offered/courses_offered.component';
 // import { } from '';
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -69,7 +70,9 @@ const routes: Routes = [
   {path:'ipmat',component:IpmatComponent},
   {path:'cat',component:CatComponent},
   {path:'ailet',component:AiletComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'partners',component:PartnersComponent},
+  {path:'courses_offered',component:coursesofferedComponent}
 ];
 
 @NgModule({
